@@ -1,0 +1,51 @@
+.. _architecture-concept:
+
+Architecture Concepts
+=====================
+
+The scope of cluster architecture is broad, designing a cluster involves:
+
+- Identifying the cluster platform
+- Deciding on operating system configuration
+- Choosing node structure for workflow
+
+Platforms
+---------
+
+With the rise of cloud computing and the constant evolution of metal and container solutions there are many platforms on which a cluster architecture can be built. To name a few:
+
+- Cloud
+
+  - AWS
+  - Azure
+  - Google Cloud
+
+- Metal
+
+  - Kickstart
+  - BIOS/UEFI
+
+- Virtual
+
+  - Libvirt
+  - VirtualBox
+
+
+
+Operating System
+----------------
+
+
+
+
+Node Structure
+--------------
+
+
+
+
+
+Templating
+----------
+
+

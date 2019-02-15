@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'openFlightHPC Docs'
+project = 'openFlightHPC-docs'
 copyright = '2019, openFlightHPC'
 author = 'openFlightHPC'
 
@@ -76,7 +76,6 @@ pygments_style = None
 #
 #html_theme = 'alabaster'
 html_theme = 'sphinx_rtd_theme'
-html_theme_path = ["_themes", ]
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -103,7 +102,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'openFlightHPCDocsdoc'
+htmlhelp_basename = 'openFlightHPC-docsdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -130,7 +129,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'openFlightHPCDocs.tex', 'openFlightHPC Docs Documentation',
+    (master_doc, 'openFlightHPC-docs.tex', 'openFlightHPC-docs Documentation',
      'openFlightHPC', 'manual'),
 ]
 
@@ -140,7 +139,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'openflighthpcdocs', 'openFlightHPC Docs Documentation',
+    (master_doc, 'openflighthpc-docs', 'openFlightHPC-docs Documentation',
      [author], 1)
 ]
 
@@ -151,8 +150,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'openFlightHPCDocs', 'openFlightHPC Docs Documentation',
-     author, 'openFlightHPCDocs', 'One line description of project.',
+    (master_doc, 'openFlightHPC-docs', 'openFlightHPC-docs Documentation',
+     author, 'openFlightHPC-docs', 'One line description of project.',
      'Miscellaneous'),
 ]
 

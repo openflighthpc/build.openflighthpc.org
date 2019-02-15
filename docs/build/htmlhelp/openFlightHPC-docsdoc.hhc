@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+        <param name="Window Styles" value="0x801227">
+        <param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="openFlightHPC-docs  documentation">
+    <param name="Local" value="index.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Architecture Considerations">
+    <param name="Local" value="architecture/considerations.html">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Platforms">
+    <param name="Local" value="architecture/considerations.html#platforms">
+</OBJECT>
+<UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Cloud">
+    <param name="Local" value="architecture/considerations.html#cloud">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Metal">
+    <param name="Local" value="architecture/considerations.html#metal">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Virtual">
+    <param name="Local" value="architecture/considerations.html#virtual">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Operating System">
+    <param name="Local" value="architecture/considerations.html#operating-system">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Node Structure">
+    <param name="Local" value="architecture/considerations.html#node-structure">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Templating">
+    <param name="Local" value="architecture/considerations.html#templating">
+</OBJECT>
+</UL>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Available Tools">
+    <param name="Local" value="architecture/available-tools.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="openFlightHPC Architect">
+    <param name="Local" value="architecture/openflighthpc-architect.html">
+</OBJECT>
+<LI> <OBJECT type="text/sitemap">
+    <param name="Name" value="Workflow: Scheduler Cluster">
+    <param name="Local" value="architecture/workflow-scheduler-cluster.html">
+</OBJECT>
+</UL></BODY></HTML>
