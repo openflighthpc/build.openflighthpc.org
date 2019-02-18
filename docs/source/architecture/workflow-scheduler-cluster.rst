@@ -7,4 +7,6 @@ Workflow: Scheduler Cluster
 
 .. include:: /architecture/partials/workflow-scheduler-cluster.rst
 
+.. include:: /architecture/partials/workflow-upload.rst
+
 .. include:: /architecture/partials/workflow-export.rst
