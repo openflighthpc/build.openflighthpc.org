@@ -2,3 +2,8 @@
 
 Workflow: Scheduler Cluster
 ===========================
+
+.. include:: partials/workflow-install.rst
+
+Next
+----
