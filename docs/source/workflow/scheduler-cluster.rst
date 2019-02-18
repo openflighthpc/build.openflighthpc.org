@@ -7,7 +7,11 @@ Workflow: Scheduler Cluster
 
 .. include:: /architecture/partials/workflow-scheduler-cluster.rst
 
+.. include:: /architecture/partials/workflow-export.rst
+
 .. include:: /platform/partials/workflow-install.rst
+
+.. include:: /platform/partials/workflow-import.rst
 
 .. include:: /platform/partials/workflow-scheduler-cluster.rst
 

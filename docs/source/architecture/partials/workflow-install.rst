@@ -1,7 +1,7 @@
 Install Architect
 -----------------
 
-Architect is a Ruby tool that requires Ruby 2.5+ to operate. This can use an existing Ruby installation on the machine being used to generate templates (for more information see the Architect installation guide).
+Architect is a Ruby tool that requires Ruby 2.5+ to operate. 
  
 In this guide, the installation will use Flight Core to provide both the Ruby environment and command line helpers. 
  
@@ -28,7 +28,7 @@ Once installation has completed the Flight Core tool will needed to be added to 
  
 Now that Flight Core environment has been setup, the latest version of Architect can be installed automatically with the following command::
 
-    [root@myhost ~]# curl https://raw.githubusercontent.com/alces-software/architect/master/scripts/install |/bin/bash
+    [root@myhost ~]# curl https://raw.githubusercontent.com/openflighthpc/flight-architect/develop/scripts/install |/bin/bash
  
 Now Architect is installed and can be executed with Flight Core::
  
