@@ -7,6 +7,8 @@ openFlightHPC Architect is a powerful templating tool that aims to reduce the ar
 
 With the concept of different platforms (AWS, Azure, Libvirt, Kickstart, Virtualbox) built into the Architect tool, templates for deploying a cluster on to all platforms are generated meaning your cluster is not restricted to one platform based on configuration.
 
+.. _source-configuration-templates:
+
 Source Configuration & Templates
 --------------------------------
 
@@ -34,6 +36,14 @@ Cluster Templates
 
 
 
+Questions/Answers
+-----------------
+
+
+
+
+
+
 Profiles
 --------
 
@@ -55,4 +65,16 @@ openFlightHPC Architect addresses these concerns and inconsistencies between pla
 - Heirarchical cluster information (domain, group and node level configurations)
 - Question/answer prompts for key information
 
-Architect uses embedded Ruby in template files to customise scripts on a per-node or per-group basis. For example, 
+Architect uses embedded Ruby in template files to customise scripts on a per-node or per-group basis. For example, the below YAML (from ``domain.yaml``) defines the network status, using references to answers::
+
+    networks:
+      network1:
+
+Rendering
+---------
+
+As mentioned above, templates contain embedded Ruby to assist generating node (or group) specific versions of files. These unique files are generated when Architect is commanded to render them, this automatically occurs as part of the ``init`` process if using a cluster profile and can be manually triggered as follows::
+
+    flight underware template
+
+The above will render the cluster templates 

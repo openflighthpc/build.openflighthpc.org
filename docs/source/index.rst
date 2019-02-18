@@ -48,15 +48,35 @@ Table of Contents
    architecture/considerations
    architecture/available-tools
    architecture/openflighthpc-architect
+   architecture/openflighthpc-architect-reference
    architecture/workflow-scheduler-cluster
 
-Platform
---------
+.. toctree::
+   :maxdepth: 1
+   :caption: Platform
+   :name: platform
 
-**Coming Soon...**
+   platform/considerations
+   platform/available-tools
+   platform/openflighthpc-cloud
+   platform/openflighthpc-cloud-reference
+   platform/workflow-scheduler-cluster
 
-Environment
------------
+.. toctree::
+   :maxdepth: 1
+   :caption: Environment
+   :name: environment
 
-**Coming Soon...**
+   environment/considerations
+   environment/available-tools
+   environment/openflighthpc-manage
+   environment/openflighthpc-manage-reference
+   environment/workflow-scheduler-cluster
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Workflow
+   :name: workflow
+
+   workflow/scheduler-cluster
+  

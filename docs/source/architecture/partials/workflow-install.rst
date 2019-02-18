@@ -5,7 +5,7 @@ Architect is a Ruby tool that requires Ruby 2.5+ to operate. This can use an exi
  
 In this guide, the installation will use Flight Core to provide both the Ruby environment and command line helpers. 
  
-Firstly, the Flight Core environment will need to be installed as root on a CentOS 7 system.::
+Firstly, the Flight Core environment will need to be installed as root on a CentOS 7 system::
  
     [root@myhost ~]# yum install https://s3-eu-west-1.amazonaws.com/alces-flight/rpms/flight-core-0.1.0%2B20190121150201-1.el7.x86_64.rpm
  
@@ -48,5 +48,5 @@ Now Architect is installed and can be executed with Flight Core::
         each         Runs a command for a node(s)
     <snip>
      
-    For more information regarding customisation of the installer see the Architect installation guide.
+For more information regarding customisation of the installer see the `Architect installation guide <https://github.com/alces-software/underware/blob/master/INSTALL.md/>`_.
 
