@@ -6,7 +6,7 @@
 Welcome to the openFlightHPC Project Documentation
 ==================================================
 
-This site contains the documentation for the openFlightHPC project. It contains concept descriptions, implementation considerations andguidelines for developing a HPC stack for any workflow. While the documentation will mainly focus on a traditional HPC cluster workflow there will be notes and tips to customising the process for varying workflows.
+This site contains the documentation for the openFlightHPC project. It contains concept descriptions, implementation considerations and guidelines for developing a HPC stack for any workflow. While the documentation will mainly focus on a traditional HPC cluster workflow there will be notes and tips to customising the process for varying workflows.
 
 Documentation Goal
 ------------------
