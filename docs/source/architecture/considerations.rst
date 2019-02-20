@@ -77,9 +77,12 @@ Operating System
 ----------------
 
 There are many different operating systems which can provide the base software stability and functionality for a given workflow. With OS selection it is worth considering:
+
 - Package versions and support for the intended software usage
 - Documentation and support availability
 - Licensing costs
+
+This community project uses CentOS 7 as it is stable and free with a large amount of documentation and community support available.
 
 Node Structure
 --------------
