@@ -1,4 +1,4 @@
-.. _architecture-available-tools:
+.. _architecture-available-software-solutions:
 
 Available Tools
 ===============

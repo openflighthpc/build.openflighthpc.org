@@ -46,7 +46,7 @@ Table of Contents
    :name: architecture
 
    architecture/considerations
-   architecture/available-tools
+   architecture/available-software-solutions
    architecture/openflighthpc-architect
    architecture/openflighthpc-architect-reference
    architecture/workflow-scheduler-cluster
@@ -57,7 +57,7 @@ Table of Contents
    :name: platform
 
    platform/considerations
-   platform/available-tools
+   platform/available-software-solutions
    platform/openflighthpc-cloud
    platform/openflighthpc-cloud-reference
    platform/workflow-scheduler-cluster
@@ -68,7 +68,7 @@ Table of Contents
    :name: environment
 
    environment/considerations
-   environment/available-tools
+   environment/available-software-solutions
    environment/openflighthpc-manage
    environment/openflighthpc-manage-reference
    environment/workflow-scheduler-cluster
