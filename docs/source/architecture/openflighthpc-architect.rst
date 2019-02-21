@@ -59,49 +59,9 @@ Questions/Answers
 
 Architect streamlines general configuration through interactive question/answer prompts which are stored along with the cluster templates. 
 
-Questions are defined in ``configure.yaml`` (either at the :ref:`source level <source-configuration-templates>` [for new clusters] or in the :ref:`cluster directory <cluster-configuration-templates>` [for existing clusters]).
+Questions can be asked at any scope level (domain, group or node) and inherit answers from the level above them if alredy present.
 
-A question definition is structured as follows (beneath the ``questions:`` line in the file)::
-
-      - &cluster_name
-        identifier: cluster_name
-        question: 'Name of the cluster'
-
-It's best practice to keep the anchor (``&cluster_name``) and the identifier (``cluster_name``) consistent for referencing throughout the questions definition and config files. The ``question`` is what will be displayed on the prompt during :ref:`the configure process <architect-configure-cluster>`. 
-
-Once a question has been defined it won't be asked unless added to one of the scope lists at the bottom of the file. The above example question is defined to be asked at the domain level::
-
-    domain:
-      - *cluster_name
-
-Question Flags
-^^^^^^^^^^^^^^
-
-The following snippets are optional flags that can appended to question definitions.
-
-::
-
-    default: 'my default answer'
-
-The placeholder/default answer for the question.
-
-::
-
-    choices:
-      - option1
-      - option2
-      - option3
-
-A list of available options, these will be displayed during the configure process and the user must select one of the options to continue.
-
-::
-
-    type: boolean
-
-Defines the type of answer. Booleans will only accept ``true``/``false`` as valid answers. The other available types are:
-
-- ``password`` which will prompt for a password twice and save the password in an encrypted format.
-- ``integer`` which will only allow numerical answers.
+For information on setting up questions see :ref:`the questions reference <architect-questions>`.
 
 Profiles
 --------
