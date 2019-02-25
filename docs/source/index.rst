@@ -46,6 +46,9 @@ Table of Contents
    :name: architecture
 
    architecture/considerations
+   architecture/considerations-network-design
+   architecture/considerations-infrastructure-design
+   architecture/considerations-storage-design
    architecture/available-software-solutions
    architecture/openflighthpc-architect
    architecture/openflighthpc-architect-reference

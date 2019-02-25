@@ -1,7 +1,7 @@
 .. _architecture-considerations:
 
-Architecture Considerations
-===========================
+Architecture Considerations: General
+====================================
 
 The scope of cluster architecture is broad, designing a cluster involves:
 
