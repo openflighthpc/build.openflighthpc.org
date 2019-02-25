@@ -5,11 +5,6 @@ Architecture Considerations: Network and Hardware Design
 
 At Alces software, the recommended network design differs slightly depending on the number of users and quantity of systems within the HPC platform. 
 
-Hardware Recommendations
-------------------------
-
-Recommendations for blades, network switches and storage technologies can be found here - https://github.com/alces-software/knowledgebase/wiki
-
 .. _cluster-architectures:
 
 Cluster Architectures
@@ -86,4 +81,3 @@ When it comes to optimising the BIOS settings on a system in the network, the fo
 
 .. note:: The wordings for settings above may differ depending on the hardware that is being used. Look for similar settings that can be configured to achieve the same result.
 
-For hardware-specific BIOS configuration settings see https://github.com/alces-software/knowledgebase/wiki#servers
