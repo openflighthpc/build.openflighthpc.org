@@ -10,9 +10,9 @@ There are many tools out there to aid with cluster architecture design. Some of 
 |               | openFlightHPC | openhpc.community  | xCAT  | RedHat CloudForms |
 | Platform      | Architect     |                    |       |                   |
 +===============+===============+====================+=======+===================+
-| AWS           |     ``y``     |       ``*``        | ``y`` |       ``n``       |
+| AWS           |     ``y``     |       ``*``        | ``y`` |       ``y``       |
 +---------------+---------------+--------------------+-------+-------------------+
-| Azure         |     ``y``     |       ``*``        | ``y`` |       ``n``       |
+| Azure         |     ``y``     |       ``*``        | ``y`` |       ``y``       |
 +---------------+---------------+--------------------+-------+-------------------+
 | Metal         |     ``y``     |       ``*``        | ``y`` |       ``*``       |
 +---------------+---------------+--------------------+-------+-------------------+
@@ -28,19 +28,21 @@ There are many tools out there to aid with cluster architecture design. Some of 
 :ref:`openFlightHPC Architect <openflighthpc-architect>`
 --------------------------------------------------------
 
-openFlightHPC Architect is a cluster architecture tool which focuses on the logical configuration of the cluster and implicitly handls variations between platforms. 
+openFlightHPC Architect is a cluster architecture tool in the openFlightHPC toolbox (an open-source, community HPC project). The tool focuses on the logical configuration of the cluster and implicitly handles variations between platforms. Architect provides platform-level deployment files (e.g. CloudFormation templates for AWS, kickstart files for metal builds).
 
 `openhpc.community <http://openhpc.community>`_
 -----------------------------------------------
 
+openhpc.community is a collaborative, community HPC project that provides various RPMs for configuring an existing OS into a cluster. 
 
 `xCAT <https://xcat.org>`_
 --------------------------
 
+xCAT provides build tools for multiple platforms and operating systems which build and customise HPC clusters.
 
 `RedHat CloudForms <https://www.redhat.com/en/technologies/management/cloudforms>`_
 -----------------------------------------------------------------------------------
 
-
+RedHat CloudForms is an orchestration platform designed for hybrid environments. It provides a unified dashboard for deploying systems on private and public cloud.
 
 
