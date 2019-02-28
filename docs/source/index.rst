@@ -81,5 +81,6 @@ Table of Contents
    :caption: Workflow
    :name: workflow
 
+   workflow/considerations
    workflow/scheduler-cluster
   
