@@ -235,3 +235,6 @@ Defines the type of answer. Booleans will only accept ``true``/``false`` as vali
 - ``password`` which will prompt for a password twice and save the password in an encrypted format.
 - ``integer`` which will only allow numerical answers.
 
+.. _architect-export:
+
+.. include:: /architecture/partials/workflow-export.rst
