@@ -30,6 +30,12 @@ Now that Flight Core environment has been setup, the latest version of Cloudware
 
     [root@myhost ~]# curl https://raw.githubusercontent.com/openflighthpc/flight-cloud/develop/scripts/install |/bin/bash
 
+Before Cloudware can be run it will need cloud provider credentials in order to access your account. Copy the example template into place::
+
+    [root@myhost ~]# cp /opt/flight/tools/cloudware/etc/config.yaml.example /opt/flight/tools/cloudware/etc/config.yaml
+
+Open ``/opt/flight/tools/cloudware/etc/config.yaml`` with your favourite text editor and populate it with access tokens and credentials.
+
 Now Cloudware is installed and can be executed with Flight Core::
 
     [root@myhost ~]# flight cloud-aws
