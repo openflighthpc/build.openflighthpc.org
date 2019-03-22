@@ -21,7 +21,7 @@ Flight Manage requires Ruby 2.5.1+ and bundler in order to work. Ensure that the
 The entry script is located at ``bin/manage``.
 
 Runway Installation
-^^^^^^^^^^^^^^^^^^^
+-------------------
 
 Alternatively, Flight Runway (and Flight Tools) provides the Ruby environment and command-line helpers for running openflightHPC tools.
 
