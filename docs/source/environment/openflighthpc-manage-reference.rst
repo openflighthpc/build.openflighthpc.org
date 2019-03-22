@@ -92,3 +92,8 @@ To run all scripts with the stage ``oneoff``, add the stage flag::
 Mark Script as Externally Run
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+If a script fails on a node and, separately of flight-manage, the script issues are resolved and applied to a node then the script can be marked as resolved::
+
+    [root@myhost ~]# flight manage script resolve anotherscript/run.bash
+    anotherscript/run.bash has been marked as resolved
+
