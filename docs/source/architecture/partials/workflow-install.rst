@@ -1,41 +1,50 @@
 Install Architect
 -----------------
 
-Architect is a Ruby tool that requires Ruby 2.5+ to operate. 
- 
-In this guide, the installation will use Flight Core to provide both the Ruby environment and command line helpers. 
- 
-Firstly, the Flight Core environment will need to be installed as root on a CentOS 7 system::
- 
-    [root@myhost ~]# yum install https://s3-eu-west-1.amazonaws.com/alces-flight/rpms/flight-core-0.1.0%2B20190121150201-1.el7.x86_64.rpm
- 
-Once installation has completed the Flight Core tool will needed to be added to the path, this can be done by logging out and back in or sourcing the profile script::
- 
-    [root@myhost ~]# source /etc/profile.d/alces-flight.sh
-    [root@myhost ~]# flight
-    Usage: flight COMMAND [[OPTION]... [ARGS]]
-    Perform high performance computing management activities.
+Manual Installation
+^^^^^^^^^^^^^^^^^^^
 
-    Commands:
-      flight help             Display help and usage information.
-      flight shell            Enter a shell-like sandbox for a Flight command.
+Flight Architect requires Ruby 2.5.1+ and bundler in order to work. Ensure that these are installed, working and available in your environment before continuing.
 
-    For more help on a particular command run:
-      flight COMMAND help
+- Clone the repository::
 
-    Please report bugs to <flight@alces-flight.com>
-    Alces Flight home page: <https://alces-flight.com/>
- 
-Now that Flight Core environment has been setup, the latest version of Architect can be installed automatically with the following command::
+    [root@myhost ~]# git clone https://github.com/alces-software/underware.git
 
-    [root@myhost ~]# curl https://raw.githubusercontent.com/openflighthpc/flight-architect/develop/scripts/install |/bin/bash
- 
-Now Architect is installed and can be executed with Flight Core::
- 
+- Navigate to the installation directory::
+
+    [root@myhost ~]# cd underware
+
+- Install gem dependencies::
+
+    [root@myhost ~]# bundle install
+
+The entry script is located at ``bin/underware``.
+
+Runway Installation
+^^^^^^^^^^^^^^^^^^^
+
+Alternatively, Flight Runway (and Flight Tools) provides the Ruby environment and command-line helpers for running openflightHPC tools.
+
+To install Flight Runway, see the `Flight Runway installation docs <https://github.com/openflighthpc/flight-runway#installation>`_ and for Flight Tools, see the `Flight Tools installation docs <https://github.com/openflighthpc/openflight-tools#installation>`_.
+
+These instructions assume that ``flight-runway`` and ``flight-tools`` have been installed from the openflightHPC yum repository and `system-wide integration <https://github.com/openflighthpc/flight-runway#system-wide-integration>`_ enabled.
+
+Integrate Flight Architect to runway::
+
+    [root@myhost ~]# flintegrate /opt/flight/opt/openflight-tools/tools/flight-architect.yml
+    Loading integration instructions ... OK.
+    Verifying instructions ... OK.
+    Downloading from URL: https://github.com/alces-software/underware/archive/0.6.0-rc4.zip ... OK.
+    Extracting archive ... OK.
+    Performing configuration ... OK.
+    Integrating ... OK.
+
+Flight Architect is now available via the ``flight`` tool::
+
     [root@myhost ~]# flight architect
       NAME:
 
-        architect
+        underware
 
       DESCRIPTION:
 
@@ -43,10 +52,7 @@ Now Architect is installed and can be executed with Flight Core::
 
       COMMANDS:
 
-        cluster      List, switch, and delete cluster configurations
-        configure    Configure different aspects of this Architect installation
-        each         Runs a command for a node(s)
-    <snip>
-     
-For more information regarding customisation of the installer see the `Architect installation guide <https://github.com/alces-software/underware/blob/master/INSTALL.md/>`_.
+        cluster      Initialize, list, switch, and delete cluster configurations
+        configure    Manage the cluster and node configurations
+        <snip>
 
