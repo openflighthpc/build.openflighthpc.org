@@ -27,8 +27,8 @@ To select a different cluster::
       default
     * mycluster
 
-Listing
-^^^^^^^
+List Clusters
+^^^^^^^^^^^^^
 
 List the available clusters as follows::
 
@@ -41,8 +41,8 @@ The cluster with ``*`` next to it is the currently selected cluster.
 Deployment
 ----------
 
-Creating
-^^^^^^^^
+Create Deployment
+^^^^^^^^^^^^^^^^^
 
 To create cloud resources, run the following::
 
@@ -52,8 +52,8 @@ To create cloud resources, run the following::
 
 .. note:: Replacing ``DEPLOYMENT_NAME`` with a name for the resource collection and ``TEMPLATE_PATH`` with the full/relative path to cloud template.
 
-Listing
-^^^^^^^
+List Deployments
+^^^^^^^^^^^^^^^^
 
 To show the existing deployments::
 
@@ -72,8 +72,8 @@ To show the existing deployments::
 
 The information provided for each deployment includes both the input and output parameters.
 
-Destroying
-^^^^^^^^^^
+Destroy Deployment
+^^^^^^^^^^^^^^^^^^
 
 To destroy an existing deployment::
 
