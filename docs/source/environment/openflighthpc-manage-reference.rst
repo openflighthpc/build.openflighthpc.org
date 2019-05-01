@@ -40,9 +40,16 @@ Show Scripts
 To display the scripts that can be run with Manage, run script list::
 
     [root@myhost ~]# flight manage script list
+
+    Listing all flight scripts in '/opt/service/scripts':
     anotherscript/run.bash - A super slow script
     configure-a-thing/configureitall.bash - Install a package that's critical
     testscript1/bar.bash - Touch a file in /tmp/
+
+    Listing all flight scripts in '/opt/service/nodescripts/myhostscripts':
+    justforthisnode - This script will only be available for this node
+
+.. note:: Flight Manage checks for a ``nodescripts`` directory, allowing for node-specific scripts to be put in place without becoming available to all nodes.
 
 View Script History
 ^^^^^^^^^^^^^^^^^^^
