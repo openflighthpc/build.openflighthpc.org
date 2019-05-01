@@ -5,7 +5,7 @@ Clusters which have been configured, rendered and exported with Architect can be
 
 AWS::
 
-    [root@myhost ~]# flight cloud-aws import /root/underware-YYYY-MM-DD-HH-MM-SS.zip
+    [root@myhost ~]# flight cloud aws import /root/underware-YYYY-MM-DD-HH-MM-SS.zip
     Imported: /opt/flight/tools/cloudware/var/aws/clusters/default/lib/templates/node/node08/node08.yaml
     Imported: /opt/flight/tools/cloudware/var/aws/clusters/default/lib/templates/node/node01/node01.yaml
     Imported: /opt/flight/tools/cloudware/var/aws/clusters/default/lib/templates/node/gateway1/gateway1.yaml
@@ -25,7 +25,7 @@ AWS::
 
 Azure::
 
-    [root@myhost ~]# flight cloud-azure import /root/underware-YYYY-MM-DD-HH-MM-SS.zip
+    [root@myhost ~]# flight cloud azure import /root/underware-YYYY-MM-DD-HH-MM-SS.zip
     Imported: /opt/flight/tools/cloudware/var/azure/clusters/default/lib/templates/node/node08/node08.json
     Imported: /opt/flight/tools/cloudware/var/azure/clusters/default/lib/templates/node/node01/node01.json
     Imported: /opt/flight/tools/cloudware/var/azure/clusters/default/lib/templates/node/gateway1/gateway1.json
