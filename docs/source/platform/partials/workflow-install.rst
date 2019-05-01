@@ -1,74 +1,49 @@
-Install Cloudware
------------------
+Install Flight Cloud
+--------------------
 
-Cloudware is a Ruby tool that requires Ruby 2.5+ to operate. 
 
-In this guide, the installation will use Flight Core to provide both the Ruby environment and command line helpers.
+Option 1: Manual Installation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Firstly, the Flight Core environment will need to be installed as root on a CentOS 7 system::
+Flight Cloud requires Ruby 2.5.1+ and bundler in order to work. Ensure that these are installed, working and available in your environment before continuing.
 
-    [root@myhost ~]# yum install https://s3-eu-west-1.amazonaws.com/alces-flight/rpms/flight-core-0.1.0%2B20190121150201-1.el7.x86_64.rpm
+- Clone the repository::
 
-Once installation has completed the Flight Core tool will needed to be added to the path, this can be done by logging out and back in or sourcing the profile script::
+    [root@myhost ~]# git clone https://github.com/openflighthpc/flight-cloud.git
 
-    [root@myhost ~]# source /etc/profile.d/alces-flight.sh
-    [root@myhost ~]# flight
-    Usage: flight COMMAND [[OPTION]... [ARGS]]
-    Perform high performance computing management activities.
+- Navigate to the installation directory::
 
-    Commands:
-      flight help             Display help and usage information.
-      flight shell            Enter a shell-like sandbox for a Flight command.
+    [root@myhost ~]# cd flight-cloud
 
-    For more help on a particular command run:
-      flight COMMAND help
+- Install gem dependencies::
 
-    Please report bugs to <flight@alces-flight.com>
-    Alces Flight home page: <https://alces-flight.com/>
+    [root@myhost ~]# bundle install
 
-Now that Flight Core environment has been setup, the latest version of Cloudware can be installed automatically with the following command:: 
+The entry script is located at ``bin/cloud``.
 
-    [root@myhost ~]# curl https://raw.githubusercontent.com/openflighthpc/flight-cloud/develop/scripts/install |/bin/bash
+Option 2: Runway Installation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Before Cloudware can be run it will need cloud provider credentials in order to access your account. Copy the example template into place::
+Flight Runway provides the Ruby environment and command-line helpers for running openflightHPC tools.
 
-    [root@myhost ~]# cp /opt/flight/tools/cloudware/etc/config.yaml.example /opt/flight/tools/cloudware/etc/config.yaml
+To install Flight Runway, see the `Flight Runway installation docs <https://github.com/openflighthpc/flight-runway#installation>`_.
 
-Open ``/opt/flight/tools/cloudware/etc/config.yaml`` with your favourite text editor and populate it with access tokens and credentials.
+These instructions assume that ``flight-runway`` has been installed from the openflightHPC yum repository and `system-wide integration <https://github.com/openflighthpc/flight-runway#system-wide-integration>`_ enabled.
 
-Now Cloudware is installed and can be executed with Flight Core::
+Install Flight Cloud::
 
-    [root@myhost ~]# flight cloud-aws
-      NAME:
+    [root@myhost ~]# yum -y install flight-cloud
 
-        cloud-aws
+Flight Cloud is now available via the flight tool::
+
+    [root@myhost ~]# flight cloud
+      SYNOPSIS:
+
+        flight cloud <platform> [<args>]
 
       DESCRIPTION:
 
-        Cloud orchestration tool
+        Perform cloud platform activities.  Valid platforms are "aws"
+        and "azure".
 
-      COMMANDS:
-
-        cluster Manage the current cluster selection
-        deploy  Deploy new resource(s) define by a template
-        destroy Destroy a deployment and related resouces
-    <snip>
-
-    [root@myhost ~]# flight cloud-azure
-      NAME:
-
-        cloud-azure
-
-      DESCRIPTION:
-
-        Cloud orchestration tool
-
-      COMMANDS:
-
-        cluster Manage the current cluster selection
-        deploy  Deploy new resource(s) define by a template
-        destroy Destroy a deployment and related resouces
-    <snip>
-
-For more information regarding customisation of the installer see the `Cloudware installation guide <https://github.com/alces-software/cloudware/blob/master/INSTALL.md/>`_.
 
