@@ -1,7 +1,6 @@
 Install Flight Cloud
 --------------------
 
-
 Option 1: Manual Installation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
