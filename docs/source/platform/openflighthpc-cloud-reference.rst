@@ -15,7 +15,7 @@ Add Cluster
 
 Create a new cluster with the init command::
 
-    [root@myhost ~]# flight cloud-aws cluster init mycluster
+    [root@myhost ~]# flight cloud aws cluster init mycluster
     Created cluster: mycluster
 
 Change Cluster
@@ -23,7 +23,7 @@ Change Cluster
 
 To select a different cluster::
 
-    [root@myhost ~]# flight cloud-aws cluster switch mycluster
+    [root@myhost ~]# flight cloud aws cluster switch mycluster
       default
     * mycluster
 
@@ -32,7 +32,7 @@ List Clusters
 
 List the available clusters as follows::
 
-    [root@myhost ~]# flight cloud-aws list clusters
+    [root@myhost ~]# flight cloud aws list clusters
       default
     * mycluster
 
@@ -46,7 +46,7 @@ Create Deployment
 
 To create cloud resources, run the following::
 
-    [root@myhost ~]# flight cloud-aws deploy mydomain /opt/flight/tools/cloud/examples/aws/domain.yaml
+    [root@myhost ~]# flight cloud aws deploy mydomain /opt/flight/tools/cloud/examples/aws/domain.yaml
     Deploying: /opt/flight/tools/cloudware/var/aws/clusters/default/lib/templates/domain/domain.yaml
     [┴] Deploying resources...
 
@@ -57,7 +57,7 @@ List Deployments
 
 To show the existing deployments::
 
-    [root@myhost ~]# flight cloud-aws list deployments
+    [root@myhost ~]# flight cloud aws list deployments
     Deployment: ‘mydomain’
     Creation Date: 2019-03-19 14:04:15 +0000
     Template: /opt/flight/tools/cloudware/var/aws/clusters/default/lib/templates/domain/domain.yaml
@@ -77,7 +77,7 @@ Destroy Deployment
 
 To destroy an existing deployment::
 
-    [root@myhost ~]# flight cloud-aws destroy mydomain
+    [root@myhost ~]# flight cloud aws destroy mydomain
     [┬] Destroying resources... Done
 
 Listing
@@ -88,7 +88,7 @@ Templates
 
 To list the available templates::
 
-    [root@myhost ~]# flight cloud-aws list templates
+    [root@myhost ~]# flight cloud aws list templates
     domain
     domain/domainandallnodes
     group/login
@@ -103,7 +103,7 @@ Nodes
 
 To list nodes that have been deployed with Cloud::
 
-    [root@myhost ~]# flight cloud-aws list machines
+    [root@myhost ~]# flight cloud aws list machines
     Machine: ‘node01’
     ● ID: i-0451e9f0c287a7bec
     ● groups: nodes
@@ -116,7 +116,7 @@ Status
 
 To check the power status of a node::
 
-    [root@myhost ~]# flight cloud-aws power status node01
+    [root@myhost ~]# flight cloud aws power status node01
     node01: running
 
 .. note:: Instead of a nodename, use ``-g groupname`` to run the power command across all nodes in ``groupname``.
@@ -126,7 +126,7 @@ Start
 
 To power on a node::
 
-    [root@myhost ~]# flight cloud-aws power on node01
+    [root@myhost ~]# flight cloud aws power on node01
     Turning node01 on
 
 Stop
@@ -134,6 +134,6 @@ Stop
 
 To power off a node::
 
-    [root@myhost ~]# flight cloud-aws power off node01
+    [root@myhost ~]# flight cloud aws power off node01
     Turning node01 off
 
