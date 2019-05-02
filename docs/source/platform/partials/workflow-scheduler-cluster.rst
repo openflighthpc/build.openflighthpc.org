@@ -3,7 +3,7 @@ Create Domain
 
 Deploy the domain with::
 
-    [root@myhost ~]# flight cloud-aws deploy mydomain domain
+    [root@myhost ~]# flight cloud aws deploy mydomain domain
     Deploying: /opt/flight/tools/cloudware/var/aws/clusters/default/lib/templates/domain/domain.yaml
     [└] Deploying resources..
 
@@ -14,7 +14,7 @@ Deploy Gateway
 
 Deploy the gateway with::
 
-    [root@myhost ~]# flight cloud-aws deploy gateway1 node/gateway1 -p "securitygroup,network1SubnetID=*mydomain"
+    [root@myhost ~]# flight cloud aws deploy gateway1 node/gateway1 -p "securitygroup,network1SubnetID=*mydomain"
     Deploying: /opt/flight/tools/cloudware/var/aws/clusters/default/lib/templates/node/gateway1/gateway1.yaml
     [└] Deploying resources..
 
@@ -25,7 +25,7 @@ Deploy Compute Nodes
 
 Deploy the nodes with (replacing ``node01`` with the next incremented node)::
 
-    [root@myhost ~]# flight cloud-aws deploy node01 node/node01 -p "securitygroup,network1SubnetID=*mydomain"
+    [root@myhost ~]# flight cloud aws deploy node01 node/node01 -p "securitygroup,network1SubnetID=*mydomain"
     Deploying: /opt/flight/tools/cloudware/var/aws/clusters/default/lib/templates/node/node01/node01.yaml
     [└] Deploying resources..
 
