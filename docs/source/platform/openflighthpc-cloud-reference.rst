@@ -13,9 +13,9 @@ Clusters
 Add Cluster
 ^^^^^^^^^^^
 
-Create a new cluster with the init command::
+Create a new cluster with the init command (replace ``aws`` with ``azure`` for creating and managing Azure clusters)::
 
-    [root@myhost ~]# flight cloud aws cluster init mycluster
+    [root@myhost ~]# flight cloud cluster init mycluster aws
     Created cluster: mycluster
 
 Change Cluster
@@ -23,7 +23,7 @@ Change Cluster
 
 To select a different cluster::
 
-    [root@myhost ~]# flight cloud aws cluster switch mycluster
+    [root@myhost ~]# flight cloud cluster switch mycluster
       default
     * mycluster
 
@@ -32,7 +32,7 @@ List Clusters
 
 List the available clusters as follows::
 
-    [root@myhost ~]# flight cloud aws list clusters
+    [root@myhost ~]# flight cloud list clusters
       default
     * mycluster
 
@@ -44,69 +44,56 @@ Deployment
 Create Deployment
 ^^^^^^^^^^^^^^^^^
 
-To create cloud resources, run the following::
+To add a node cloud template as a deployment definition, run the following::
 
-    [root@myhost ~]# flight cloud aws deploy mydomain /opt/flight/tools/cloud/examples/aws/domain.yaml
-    Deploying: /opt/flight/tools/cloudware/var/aws/clusters/default/lib/templates/domain/domain.yaml
-    [┴] Deploying resources...
+    [root@myhost ~]# flight cloud create mynode /path/to/mynodetemplate
 
-.. note:: Replacing ``DEPLOYMENT_NAME`` with a name for the resource collection and ``TEMPLATE_PATH`` with the full/relative path to cloud template.
+Deploy Resources
+^^^^^^^^^^^^^^^^
+
+To deploy cloud resources, run the following using a configured deployment::
+
+    [root@myhost ~]# flight cloud deploy mynode
+    Please provide values for the following missing parameters:
+    (Note: Use the format of '*<resource_name>' to reference a resource)
+    securitygroup: *domain
+    network1SubnetID: *domain
+    [┴] Deploying node...
+
+.. note:: If :ref:`parameters <platform/openflighthpc-cloud:Parameter Substitution>` are present in the template and have not been provided at deployment time with ``-p`` then these shall be prompted for before deployment takes place.
 
 List Deployments
 ^^^^^^^^^^^^^^^^
 
 To show the existing deployments::
 
-    [root@myhost ~]# flight cloud aws list deployments
-    Deployment: ‘mydomain’
-    Creation Date: 2019-03-19 14:04:15 +0000
-    Template: /opt/flight/tools/cloudware/var/aws/clusters/default/lib/templates/domain/domain.yaml
+    [root@myhost ~]# flight cloud list
+    Deployment: ‘mynode’
+    Creation Date: 2019-08-02 13:11:06 +0100
+    Status: Running
+    Provider Tag: cloudware-shared-mynode-03e94412ea
+    Groups: login,all
 
       Results
-      ● securitygroup: sg-0df183dfcf0087795
-      ● network1SubnetID: subnet-0ff88fe5109be363f
-      ● networkID: vpc-0175f3et48b9f16a1
+      ● gateway1TAGgroups: login,all
+      ● gateway1TAGIP: 34.242.121.209
+      ● gateway1TAGID: i-0b62725c674b46818
 
       Replacements
-      ● deployment_name: mydomain
+      ● deployment_name: mynode
+      ● securitygroup: *domain
+      ● network1SubnetID: *domain
 
-The information provided for each deployment includes both the input and output parameters.
+
+The information provided for each deployment includes both the input and output parameters. To show undeployed resources, add ``--all`` to the list command.
 
 Destroy Deployment
 ^^^^^^^^^^^^^^^^^^
 
 To destroy an existing deployment::
 
-    [root@myhost ~]# flight cloud aws destroy mydomain
-    [┬] Destroying resources... Done
-
-Listing
--------
-
-Templates
-^^^^^^^^^
-
-To list the available templates::
-
-    [root@myhost ~]# flight cloud aws list templates
-    domain
-    domain/domainandallnodes
-    group/login
-    group/nodes
-    group/orphan
-    node/gateway1
-    node/node01
-    node/node02
-
-Nodes
-^^^^^
-
-To list nodes that have been deployed with Cloud::
-
-    [root@myhost ~]# flight cloud aws list machines
-    Machine: ‘node01’
-    ● ID: i-0451e9f0c287a7bec
-    ● groups: nodes
+    [root@myhost ~]# flight cloud destroy mynode
+    [┬] Destroying node... Done
 
 Power
 -----
@@ -116,8 +103,8 @@ Status
 
 To check the power status of a node::
 
-    [root@myhost ~]# flight cloud aws power status node01
-    node01: running
+    [root@myhost ~]# flight cloud power status mynode
+    mynode: running
 
 .. note:: Instead of a nodename, use ``-g groupname`` to run the power command across all nodes in ``groupname``.
 
@@ -126,14 +113,14 @@ Start
 
 To power on a node::
 
-    [root@myhost ~]# flight cloud aws power on node01
-    Turning node01 on
+    [root@myhost ~]# flight cloud power on mynode
+    Turning mynode on
 
 Stop
 ^^^^
 
 To power off a node::
 
-    [root@myhost ~]# flight cloud aws power off node01
-    Turning node01 off
+    [root@myhost ~]# flight cloud power off mynode
+    Turning mynode off
 

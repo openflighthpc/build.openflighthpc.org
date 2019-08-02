@@ -8,7 +8,7 @@ Architect comes with a cluster profile named ``example`` which automates additio
 
 To create a new cluster, ``mycluster``, using the default ``example`` profile, simply (more information on the ``init`` command can be found at :ref:`openFlightHPC Architect Common Practices <architect-create-cluster>`)::
 
-    [root@myhost ~]# flight underware cluster init mycluster
+    [root@myhost ~]# flight architect cluster init mycluster
     Name of the cluster (1/6)
     mycluster
     Password to use for root user (2/6)

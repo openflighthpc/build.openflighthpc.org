@@ -38,7 +38,7 @@ Flight Architect is now available via the ``flight`` tool::
     [root@myhost ~]# flight architect
       NAME:
 
-        underware
+        architect
 
       DESCRIPTION:
 

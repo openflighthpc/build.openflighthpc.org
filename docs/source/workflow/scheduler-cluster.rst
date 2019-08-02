@@ -3,7 +3,13 @@
 Workflow: Scheduler Cluster
 ===========================
 
-.. include:: /architecture/partials/workflow-install.rst
+Prerequisites
+-------------
+
+Before following this workflow, be sure to have:
+
+- :ref:`Installed Flight Architect <architecture/openflighthpc-architect-reference:Install Flight Architect>`
+- :ref:`Installed Flight Cloud <platform/openflighthpc-cloud-reference:Install Flight Cloud>`
 
 .. include:: /architecture/partials/workflow-scheduler-cluster.rst
 
@@ -11,12 +17,7 @@ Workflow: Scheduler Cluster
 
 .. include:: /architecture/partials/workflow-export.rst
 
-.. include:: /platform/partials/workflow-install.rst
-
 .. include:: /platform/partials/workflow-import.rst
 
 .. include:: /platform/partials/workflow-scheduler-cluster.rst
 
-.. include:: /environment/partials/workflow-install.rst
-
-.. include:: /environment/partials/workflow-scheduler-cluster.rst

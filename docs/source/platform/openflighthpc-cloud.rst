@@ -37,13 +37,13 @@ Parameter Passing
 
 Parameters can be generic strings or references to other Cloud deployments. The values to replace parameters with are given on the command line, for example::
 
-    [root@myhost ~]# flight cloud aws deploy node01 templates/node01.yaml --params "keyname=mysshkeyname securitygroup=*cluster-domain"
+    [root@myhost ~]# flight cloud deploy node01 --params "keyname=mysshkeyname securitygroup=*cluster-domain"
 
 In the above, any occurences of ``%keyname%`` will be replaced with ``mysshkeyname`` and any occurences of ``%securitygroup%`` will be replaced with the value of ``securitygroup`` from the outputs of the deployment ``cluster-domain``. The asterisk (``*``) in front of ``cluster-domain`` is what lets Cloud know to reference values from another deployment instead of doing arbitrary string replacement.
 
 Multiple parameters can be replaced with corresponding values from a deployment by comma-separating the key names::
 
-    [root@myhost ~]# flight cloud aws deploy node01 templates/node01.yaml --params "keyname=mysshkeyname securitygroup,network1SubnetID=*cluster-domain"
+    [root@myhost ~]# flight cloud deploy node01 --params "keyname=mysshkeyname securitygroup,network1SubnetID=*cluster-domain"
 
 Resource Types
 --------------
@@ -80,6 +80,4 @@ The above tags allow for multiple nodes to be deployed from a single template bu
 Compatibility with openFlightHPC Architect
 ------------------------------------------
 
-When a cluster architecture has been configured with :ref:`openFlightHPC Architect it can be exported <architect-export>` for usage with openFlightHPC Cloud. 
-
-The openFlightHPC Cloud tool knows which template files it needs to import for deploying resources to the cloud. These imported templates can then be fired at the chosen provider to deploy the resources.  
+When a cluster architecture has been configured with openFlightHPC Architect it will generate a :ref:`manifest file <architecture/openflighthpc-architect-reference:Manifest Export>` which can be used to import the templates and node metadata for a cluster into openFlightHPC Cloud.

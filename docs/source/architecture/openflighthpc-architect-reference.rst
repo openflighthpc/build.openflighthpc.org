@@ -48,7 +48,7 @@ Delete Cluster
 
 Delete cluster named ``anothercluster``::
 
-    [root@myhost ~]# flight underware cluster delete anothercluster
+    [root@myhost ~]# flight architect cluster delete anothercluster
     Are you sure you want to delete 'anothercluster' (y/n)?
     y
 
@@ -82,7 +82,7 @@ Creating a Group
 
 Add a new group containing multiple nodes (using `genders host range syntax <https://github.com/chaos/genders/blob/master/TUTORIAL>`_)::
 
-    [root@myhost ~]# flight underware configure group newnodes compute[01-10]
+    [root@myhost ~]# flight architect configure group newnodes compute[01-10]
     1. service
     2. login
     3. compute
@@ -170,7 +170,7 @@ Referencing Answers
 
 It's best practise to reference an answer once in the configs and then use that config value in scripts. 
 
-Answers for questions at various scope levels are stored under ``/var/lib/underware/clusters/mycluster/var/answers/`` (with this example using a cluster named ``mycluster``). Take the following snippet from the ``domain.yaml`` answers file::
+Answers for questions at various scope levels are stored under ``/var/lib/architect/clusters/mycluster/var/answers/`` (with this example using a cluster named ``mycluster``). Take the following snippet from the ``domain.yaml`` answers file::
 
     cluster_name: mycluster
     root_password: "$6$aRb6bZ1PN81Reie+$kqfi1vVv16jINx9ewsgzTS9wSr33Mn3ZbcXLhbrhAUhlx8IYW3NZUc9Be6EtMABUrhlMqrDIcp5JcuOUNAROQ/"
@@ -234,6 +234,10 @@ Defines the type of answer. Booleans will only accept ``true``/``false`` as vali
 
 - ``password`` which will prompt for a password twice and save the password in an encrypted format.
 - ``integer`` which will only allow numerical answers.
+
+.. _architect-manifest-export:
+
+.. include:: /architecture/partials/workflow-manifest.rst
 
 .. _architect-export:
 

@@ -34,7 +34,7 @@ These files are stored at ``<architect home>/data/base/`` with the following str
 Cluster Configuration & Templates
 ---------------------------------
 
-openFlightHPC Architect can create, manage and store multiple cluster architectures (see :ref:`the Architect reference for more information <openflighthpc-architect-cluster-ref>`). With this functionality in mind, the source configuration and template files are copied to a cluster-specific directory upon creation. Each cluster is stored under ``/var/lib/underware/clusters/`` in a directory using the cluster name (e.g. ``mycluster`` is stored ``/var/lib/underware/clusters/mycluster/``)
+openFlightHPC Architect can create, manage and store multiple cluster architectures (see :ref:`the Architect reference for more information <openflighthpc-architect-cluster-ref>`). With this functionality in mind, the source configuration and template files are copied to a cluster-specific directory upon creation. Each cluster is stored under ``/var/lib/architect/clusters/`` in a directory using the cluster name (e.g. ``mycluster`` is stored ``/var/lib/architect/clusters/mycluster/``)
 
 The structure of the cluster directory is as follows:
 
@@ -96,6 +96,6 @@ Rendering
 
 As mentioned above, templates contain embedded Ruby to assist generating node (or group) specific versions of files. These unique files are generated when Architect is commanded to render them, this automatically occurs as part of the ``init`` process if using a cluster profile and can be manually triggered as follows::
 
-    flight underware template
+    flight architect template
 
 he above will render the cluster templates 
