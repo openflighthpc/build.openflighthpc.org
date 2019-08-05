@@ -15,7 +15,7 @@ Before following this workflow, be sure to have:
 
 .. include:: /architecture/partials/workflow-upload.rst
 
-.. include:: /architecture/partials/workflow-export.rst
+.. include:: /architecture/partials/workflow-manifest.rst
 
 .. include:: /platform/partials/workflow-import.rst
 
