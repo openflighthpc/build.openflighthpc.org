@@ -15,7 +15,7 @@ Add Cluster
 
 Create a new cluster with the init command (replace ``aws`` with ``azure`` for creating and managing Azure clusters)::
 
-    [root@myhost ~]# flight cloud cluster init mycluster aws
+    [root@myhost ~]# bin/cloud cluster init mycluster aws
     Created cluster: mycluster
 
 Change Cluster
@@ -23,7 +23,7 @@ Change Cluster
 
 To select a different cluster::
 
-    [root@myhost ~]# flight cloud cluster switch mycluster
+    [root@myhost ~]# bin/cloud cluster switch mycluster
       default
     * mycluster
 
@@ -32,7 +32,7 @@ List Clusters
 
 List the available clusters as follows::
 
-    [root@myhost ~]# flight cloud list clusters
+    [root@myhost ~]# bin/cloud list clusters
       default
     * mycluster
 
@@ -46,14 +46,14 @@ Create Deployment
 
 To add a node cloud template as a deployment definition, run the following::
 
-    [root@myhost ~]# flight cloud create mynode /path/to/mynodetemplate
+    [root@myhost ~]# bin/cloud create mynode /path/to/mynodetemplate
 
 Deploy Resources
 ^^^^^^^^^^^^^^^^
 
 To deploy cloud resources, run the following using a configured deployment::
 
-    [root@myhost ~]# flight cloud deploy mynode
+    [root@myhost ~]# bin/cloud deploy mynode
     Please provide values for the following missing parameters:
     (Note: Use the format of '*<resource_name>' to reference a resource)
     securitygroup: *domain
@@ -67,7 +67,7 @@ List Deployments
 
 To show the existing deployments::
 
-    [root@myhost ~]# flight cloud list
+    [root@myhost ~]# bin/cloud list
     Deployment: ‘mynode’
     Creation Date: 2019-08-02 13:11:06 +0100
     Status: Running
@@ -92,7 +92,7 @@ Destroy Deployment
 
 To destroy an existing deployment::
 
-    [root@myhost ~]# flight cloud destroy mynode
+    [root@myhost ~]# bin/cloud destroy mynode
     [┬] Destroying node... Done
 
 Power
@@ -103,7 +103,7 @@ Status
 
 To check the power status of a node::
 
-    [root@myhost ~]# flight cloud power status mynode
+    [root@myhost ~]# bin/cloud power status mynode
     mynode: running
 
 .. note:: Instead of a nodename, use ``-g groupname`` to run the power command across all nodes in ``groupname``.
@@ -113,7 +113,7 @@ Start
 
 To power on a node::
 
-    [root@myhost ~]# flight cloud power on mynode
+    [root@myhost ~]# bin/cloud power on mynode
     Turning mynode on
 
 Stop
@@ -121,6 +121,6 @@ Stop
 
 To power off a node::
 
-    [root@myhost ~]# flight cloud power off mynode
+    [root@myhost ~]# bin/cloud power off mynode
     Turning mynode off
 

@@ -39,7 +39,7 @@ Show Scripts
 
 To display the scripts that can be run with Manage, run script list::
 
-    [root@myhost ~]# flight manage script list
+    [root@myhost ~]# bin/manage script list
 
     Listing all flight scripts in '/opt/service/scripts':
     anotherscript/run.bash - A super slow script
@@ -56,7 +56,7 @@ View Script History
 
 To show the run history of a script, use the show command::
 
-    [root@myhost ~]# flight manage script show anotherscript/run.bash
+    [root@myhost ~]# bin/manage script show anotherscript/run.bash
     Showing current state of script: anotherscript/run
 
     headnode1: OK
@@ -73,7 +73,7 @@ Run Script
 
 To run a script on the current node, simply::
 
-    [root@myhost ~]# flight manage script run anotherscript/run.bash
+    [root@myhost ~]# bin/manage script run anotherscript/run.bash
     anotherscript/run executed with exit code 0
 
 Run a Role
@@ -81,7 +81,7 @@ Run a Role
 
 To run all scripts with the ``compute`` role, add the role flag to the run command::
 
-    [root@myhost ~]# flight manage script run -r compute
+    [root@myhost ~]# bin/manage script run -r compute
     anotherscript/run executed with exit code 0
     configure-a-thing/configureitall executed with exit code 0
     testscript1/bar executed with exit code 0
@@ -91,7 +91,7 @@ Run a Stage
 
 To run all scripts with the stage ``oneoff``, add the stage flag::
 
-    [root@myhost ~]# flight manage script run -s oneoff
+    [root@myhost ~]# bin/manage script run -s oneoff
     script-without-role/runit.bash executed with exit code 0
 
 .. note:: If scripts have both a stage and a role defined then the role will also need to be provided with ``-r rolename``
@@ -101,6 +101,6 @@ Mark Script as Externally Run
 
 If a script fails on a node and, separately of flight-manage, the script issues are resolved and applied to a node then the script can be marked as resolved::
 
-    [root@myhost ~]# flight manage script resolve anotherscript/run.bash
+    [root@myhost ~]# bin/manage script resolve anotherscript/run.bash
     anotherscript/run.bash has been marked as resolved
 

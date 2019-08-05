@@ -15,7 +15,7 @@ Show Clusters
 
 Show a cluster::
 
-    [root@myhost ~]# flight architect cluster list
+    [root@myhost ~]# bin/architect cluster list
     * mycluster
       yourcluster
       anothercluster
@@ -29,7 +29,7 @@ Create Cluster
 
 Create a cluster:: 
 
-    [root@myhost ~]# flight architect cluster init cluster_name
+    [root@myhost ~]# bin/architect cluster init cluster_name
 
 .. note:: The ``init`` command will always use the ``example`` cluster profile unless either ``--bare`` (which will copy ``<architect home>/data/base`` only) or ``--profile another_profile_name`` (where ``another_profile_name`` corresponds to a directory in ``<architect home>/data/``) are provided as arguments.
 
@@ -38,7 +38,7 @@ Change Cluster
 
 Switch to cluster named ``yourcluster``::
 
-    [root@myhost ~]# flight architect cluster switch yourcluster
+    [root@myhost ~]# bin/architect cluster switch yourcluster
       mycluster
     * yourcluster
       anothercluster
@@ -48,7 +48,7 @@ Delete Cluster
 
 Delete cluster named ``anothercluster``::
 
-    [root@myhost ~]# flight architect cluster delete anothercluster
+    [root@myhost ~]# bin/architect cluster delete anothercluster
     Are you sure you want to delete 'anothercluster' (y/n)?
     y
 
@@ -64,7 +64,7 @@ Updating Domain Configuration
 
 Ask questions at the domain-level for a cluster::
 
-    [root@myhost ~]# flight architect configure domain
+    [root@myhost ~]# bin/architect configure domain
     Name of the cluster (1/6)
     mycluster
     Password to use for root user (2/6)
@@ -82,7 +82,7 @@ Creating a Group
 
 Add a new group containing multiple nodes (using `genders host range syntax <https://github.com/chaos/genders/blob/master/TUTORIAL>`_)::
 
-    [root@myhost ~]# flight architect configure group newnodes compute[01-10]
+    [root@myhost ~]# bin/architect configure group newnodes compute[01-10]
     1. service
     2. login
     3. compute
@@ -101,7 +101,7 @@ Modifying a Node
 
 To modify an existing node::
 
-    [root@myhost ~]# flight architect configure node compute01
+    [root@myhost ~]# bin/architect configure node compute01
     Use this machine as a gateway for network traffic? (1/1) [yes/no]  |no|
 
 .. note:: If the node name provided to the command doesn't already exist within a group then it will be created as an orphan node and will inherit settings directly from the domain.
@@ -120,7 +120,7 @@ In this example, a file called ``/tmp/domainscope`` contains the following::
 
 This can be rendered in domain scope as follows::
 
-    [root@myhost ~]# flight architect render domain /tmp/domainscope
+    [root@myhost ~]# bin/architect render domain /tmp/domainscope
     mycluster
 
 Render in Group Scope
@@ -135,7 +135,7 @@ In this example, a file called ``/tmp/groupscope`` contains the following::
 
 This can be rendered in the scope of the group ``nodes`` as follows::
 
-    [root@myhost ~]# flight architect render group nodes /tmp/groupscope
+    [root@myhost ~]# bin/architect render group nodes /tmp/groupscope
     nodes
     - node01
     - node02
@@ -154,7 +154,7 @@ In this example, a file called ``/tmp/nodescope`` contains the following::
 
 This can be rendered in the scope of the node ``node01`` as follows::
 
-    [root@myhost ~]# flight architect render node node01 /tmp/nodescope
+    [root@myhost ~]# bin/architect render node node01 /tmp/nodescope
     node01
     - pri
     - mgt
