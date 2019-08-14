@@ -77,7 +77,7 @@ Templating
 
 In general, creating a HPC cluster (whether on-premise, cloud-based or on another platform) requires meticulous planning of the architecture, software stack and environment before building can commence.
 
-The platform on which the cluster is to be deployed will affect various stages of the design and planning process. For example, network configurations between network switches and cloud networks are setup in different manners and can support varying subnet ranges. This is where templating with Alces Underware alleviates the complexities of platform selection by providing a generalised configuration method that handles platform-specific configuration tweaks.
+The platform on which the cluster is to be deployed will affect various stages of the design and planning process. For example, network configurations between network switches and cloud networks are setup in different manners and can support varying subnet ranges. This is where templating with Architect alleviates the complexities of platform selection by providing a generalised configuration method that handles platform-specific configuration tweaks.
 
 openFlightHPC Architect addresses these concerns and inconsistencies between platforms by implementing a powerful templating system, providing such advantages as:
 
