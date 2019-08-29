@@ -57,20 +57,25 @@ Table of Contents
    architecture/considerations-infrastructure-design
    architecture/considerations-storage-design
    architecture/available-software-solutions
-   architecture/openflighthpc-architect
-   architecture/openflighthpc-architect-reference
-   architecture/workflow-scheduler-cluster
+   platform/considerations
 
 .. toctree::
    :maxdepth: 1
-   :caption: Platform
-   :name: platform
+   :caption: Cloud
+   :name: cloud
 
-   platform/considerations
-   platform/available-software-solutions
-   platform/openflighthpc-cloud
-   platform/openflighthpc-cloud-reference
-   platform/workflow-scheduler-cluster
+   cloud/openflighthpc-cloud
+   cloud/openflighthpc-cloud-reference
+   cloud/workflow-scheduler-cluster
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Metal
+   :name: metal
+
+   metal/openflighthpc-metal
+   metal/openflighthpc-metal-reference
+   metal/workflow-scheduler-cluster
 
 .. toctree::
    :maxdepth: 1
