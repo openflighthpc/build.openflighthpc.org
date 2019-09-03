@@ -14,7 +14,6 @@ Add a Script
 For a script to be included it must be in-place under the scripts directory (which defaults to ``/opt/service/scripts/``) and meet the following requirements:
 
 - The file extension must be ``.bash``
-- The script needs to be executable (``chmod +x script.bash``)
 - Contain at least one Manage metadata entry
 
 In terms of metadata, these key/value pairs will be at the top of the script. The following metadata is recognised::
@@ -31,8 +30,6 @@ These variables define:
 - ``rerunnable``: A boolean flag used to determine if it's safe to rerun a script.
 - ``description``: A description of the script.
 - ``stages``: A tag used for grouping when the script should run.
-
-Additionally, any lines that start ``#FLIGHT`` will be considered metadata and imported as key/value pairs. 
 
 Show Scripts
 ^^^^^^^^^^^^
