@@ -49,18 +49,6 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 1
-   :caption: Architecture
-   :name: architecture
-
-   architecture/considerations
-   architecture/considerations-network-design
-   architecture/considerations-infrastructure-design
-   architecture/considerations-storage-design
-   architecture/available-software-solutions
-   platform/considerations
-
-.. toctree::
-   :maxdepth: 1
    :caption: Cloud
    :name: cloud
 
@@ -82,8 +70,6 @@ Table of Contents
    :caption: Environment
    :name: environment
 
-   environment/considerations
-   environment/available-software-solutions
    environment/openflighthpc-manage
    environment/openflighthpc-manage-reference
    environment/workflow-scheduler-cluster
@@ -93,6 +79,5 @@ Table of Contents
    :caption: Workflow
    :name: workflow
 
-   workflow/considerations
    workflow/scheduler-cluster
   
