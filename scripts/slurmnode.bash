@@ -43,7 +43,7 @@ curl https://openflighthpc-compute.s3.eu-west-2.amazonaws.com/slurm/openflight-s
 
 yum -y -e0 install epel-release
 yum -y -e0 install munge munge-devel munge-libs perl-Switch numactl
-yum --enablerepo flight -y -e 0 --nogpgcheck install slurm slurm-devel slurm-perlapi slurm-torque slurm-slurmd slurm-example-configs slurm-libpmi
+yum --enablerepo openflight-slurm -y -e 0 --nogpgcheck install slurm slurm-devel slurm-perlapi slurm-torque slurm-slurmd slurm-example-configs slurm-libpmi
 
 echo $MUNGEKEY > /etc/munge/munge.key
 chmod 400 /etc/munge/munge.key

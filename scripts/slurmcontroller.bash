@@ -43,9 +43,9 @@ curl https://openflighthpc-compute.s3.eu-west-2.amazonaws.com/slurm/openflight-s
 
 yum -y -e0 install epel-release
 yum -y -e0 install munge munge-devel munge-libs perl-Switch numactl
-yum --enablerepo flight -y -e 0 --nogpgcheck install slurm slurm-devel slurm-perlapi slurm-torque slurm-slurmd slurm-example-configs slurm-libpmi
+yum --enablerepo openflight-slurm -y -e 0 --nogpgcheck install slurm slurm-devel slurm-perlapi slurm-torque slurm-slurmd slurm-example-configs slurm-libpmi
 yum -y -e0 install mariadb mariadb-test mariadb-libs mariadb-embedded mariadb-embedded-devel mariadb-devel mariadb-bench
-yum --enablerepo flight -y --nogpgcheck install slurm-slurmctld 
+yum --enablerepo openflight-slurm -y --nogpgcheck install slurm-slurmctld 
 
 systemctl enable mariadb
 systemctl start mariadb
