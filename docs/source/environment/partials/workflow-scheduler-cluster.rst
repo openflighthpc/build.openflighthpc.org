@@ -1,26 +1,26 @@
-Run First Stage Scripts
------------------------
-
-Run first stage scripts with::
-
-    [root@myhost ~]# bin/manage script run -s first
-    nfs executed with exit code 0
+Obtain Configuration Scripts
+----------------------------
 
 
-Run Second Stage Scripts
--------------------------
+Download scripts::
 
-Run second stage scripts with::
+    mkdir -p /opt/service/scripts
+    cd /opt/service/scripts
+    wget https://raw.githubusercontent.com/openflighthpc/openflighthpc-tools/master/scripts/flightenv.bash
+    wget https://raw.githubusercontent.com/openflighthpc/openflighthpc-tools/master/scripts/nfsserver.bash
+    wget https://raw.githubusercontent.com/openflighthpc/openflighthpc-tools/master/scripts/nfsclient.bash
+    wget https://raw.githubusercontent.com/openflighthpc/openflighthpc-tools/master/scripts/slurmcontroller.bash
+    wget https://raw.githubusercontent.com/openflighthpc/openflighthpc-tools/master/scripts/slurmnode.bash
 
-    [root@myhost ~]# bin/manage script run -s second
-    flightdirect executed with exit code 0
+Edit the scripts to ensure that the content is correct for your configuration.
+
+.. warning:: It is highly recommended to inspect all scripts and edit them to your requirement or, alternatively, write your own scripts. These scripts are provided "as is" and no guarantee is made that the scripts will function properly in environments different to that of the example environment used in this documentation.
 
 
-Run Third Stage Scripts
------------------------
+Configure Gateway Node
+----------------------
 
-Run third stage scripts with::
+On the gateway node, run all scripts for the gateway role::
 
-    [root@myhost ~]# bin/manage script run -s third
-    slurm executed with exit code 0
+    [root@gateway1 ~]# bin/manage run -r gateway
 
