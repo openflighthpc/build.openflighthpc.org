@@ -72,6 +72,7 @@ Table of Contents
 
    environment/openflighthpc-manage
    environment/openflighthpc-manage-reference
+   environment/workflow-ansible
    environment/workflow-scheduler-cluster
 
 .. toctree::
