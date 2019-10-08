@@ -3,8 +3,8 @@
 Workflow: Scheduler Cluster
 ===========================
 
-.. include:: /platform/partials/workflow-install.rst
+.. include:: /cloud/partials/workflow-install.rst
 
-.. include:: /platform/partials/workflow-import.rst
+.. include:: /cloud/partials/workflow-import.rst
 
-.. include:: /platform/partials/workflow-scheduler-cluster.rst
+.. include:: /cloud/partials/workflow-scheduler-cluster.rst
