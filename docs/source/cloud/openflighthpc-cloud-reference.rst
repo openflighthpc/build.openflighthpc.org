@@ -5,8 +5,6 @@ openFlightHPC Cloud: Reference
 
 .. include:: /cloud/partials/workflow-install.rst
 
-.. include:: /cloud/partials/workflow-import.rst
-
 Clusters
 --------
 
