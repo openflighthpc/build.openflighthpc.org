@@ -9,6 +9,5 @@ For more information on installing, configuring and using Runway - See the `Flig
 
 To integrate openflightHPC Tools with Runway, see:
 
-- :ref:`Flight Architect Installation <architecture/openflighthpc-architect-reference:Option 2: Runway Installation>`
-- :ref:`Flight Cloud Installation <platform/openflighthpc-cloud-reference:Option 2: Runway Installation>`
+- :ref:`Flight Cloud Installation <cloud/openflighthpc-cloud-reference:Option 2: Runway Installation>`
 - :ref:`Flight Manage Installation <environment/openflighthpc-manage-reference:Option 2: Runway Installation>` 
