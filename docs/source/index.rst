@@ -54,16 +54,9 @@ Table of Contents
 
    cloud/openflighthpc-cloud
    cloud/openflighthpc-cloud-reference
-   cloud/workflow-scheduler-cluster
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Metal
-   :name: metal
-
-   metal/openflighthpc-metal
-   metal/openflighthpc-metal-reference
-   metal/workflow-scheduler-cluster
+   cloud/workflow-azure
+   cloud/workflow-aws
+   cloud/workflow-flight-cloud
 
 .. toctree::
    :maxdepth: 1
@@ -73,12 +66,6 @@ Table of Contents
    environment/openflighthpc-manage
    environment/openflighthpc-manage-reference
    environment/workflow-ansible
-   environment/workflow-scheduler-cluster
+   environment/workflow-flight-manage
+   environment/workflow-manual
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Workflow
-   :name: workflow
-
-   workflow/scheduler-cluster
-  
