@@ -15,7 +15,7 @@ Clusters
 
 Cloud provides the functionality to manage and store multiple cloud clusters. Each cluster that is created will be specifically for one of the supported platforms.
 
-More information on creating and managing multiple clusters can be found in the :ref:`Cloud reference <platform/openflighthpc-cloud-reference:Clusters>`
+More information on creating and managing multiple clusters can be found in the :ref:`Cloud reference <cloud/openflighthpc-cloud-reference:Clusters>`
 
 Parameter Substitution
 ----------------------

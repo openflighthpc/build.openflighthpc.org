@@ -60,7 +60,7 @@ To deploy cloud resources, run the following using a configured deployment::
     network1SubnetID: *domain
     [┴] Deploying node...
 
-.. note:: If :ref:`parameters <platform/openflighthpc-cloud:Parameter Substitution>` are present in the template and have not been provided at deployment time with ``-p`` then these shall be prompted for before deployment takes place.
+.. note:: If :ref:`parameters <cloud/openflighthpc-cloud:Parameter Substitution>` are present in the template and have not been provided at deployment time with ``-p`` then these shall be prompted for before deployment takes place.
 
 List Deployments
 ^^^^^^^^^^^^^^^^
