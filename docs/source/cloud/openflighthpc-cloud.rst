@@ -83,8 +83,3 @@ openFlightHPC Cloud will arbitrarily read output variables from deployments. The
 - **nodenameTAG** - Setting ``nodenameTAG`` with any string following ``TAG`` will set the string as an attribute of the given nodename.
 
 The above tags allow for multiple nodes to be deployed from a single template but still be handled individually by Cloud for things like power management
-
-Compatibility with openFlightHPC Architect
-------------------------------------------
-
-When a cluster architecture has been configured with openFlightHPC Architect it will generate a :ref:`manifest file <architecture/openflighthpc-architect-reference:Manifest Export>` which can be used to import the templates and node metadata for a cluster into openFlightHPC Cloud.
