@@ -1,20 +1,41 @@
-.. _environment-workflow-scheduler-cluster:
+.. _environment-workflow-flight-manage:
 
-Workflow: Scheduler Cluster
-===========================
+Workflow: Flight Manage
+=======================
 
-This document will go through installing flight-manage, configuring system services to support the flight environment and configuring the environment itself.
-
-Prerequisites
--------------
-
-This document presumes the following situation:
-
-- The cluster has a gateway node (for running various servers)
-- The cluster has multiple compute nodes (for executing jobs)
-- DNS is correctly configured to allow hostname connections between the nodes
-- Firewall connections between the gateway and compute nodes are open to allow various services to communicate (e.g. queuing system, nfs, etc)
+.. include:: /environment/partials/workflow-prerequisites.rst
 
 .. include:: /environment/partials/workflow-install.rst
 
-.. include:: /environment/partials/workflow-scheduler-cluster.rst
+Obtain Configuration Scripts
+----------------------------
+
+Download scripts::
+
+    mkdir -p /opt/service/scripts
+    cd /opt/service/scripts
+    wget https://raw.githubusercontent.com/openflighthpc/openflighthpc-tools/master/scripts/flightenv.bash
+    wget https://raw.githubusercontent.com/openflighthpc/openflighthpc-tools/master/scripts/nfsserver.bash
+    wget https://raw.githubusercontent.com/openflighthpc/openflighthpc-tools/master/scripts/nfsclient.bash
+    wget https://raw.githubusercontent.com/openflighthpc/openflighthpc-tools/master/scripts/slurmcontroller.bash
+    wget https://raw.githubusercontent.com/openflighthpc/openflighthpc-tools/master/scripts/slurmnode.bash
+
+Edit the scripts to ensure that the content is correct for your configuration.
+
+.. warning:: It is highly recommended to inspect all scripts and edit them to your requirement or, alternatively, write your own scripts. These scripts are provided "as is" and no guarantee is made that the scripts will function properly in environments different to that of the example environment used in this documentation.
+
+
+Configure Gateway Node
+----------------------
+
+On the gateway node, run all scripts for the gateway role::
+
+    [root@gateway1 ~]# bin/manage run -r gateway
+
+Configure Compute Nodes
+-----------------------
+
+On each compute node, run all scripts for the compute role::
+
+    [root@node01 ~]# bin/manage run -r compute
+
