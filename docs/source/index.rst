@@ -6,20 +6,12 @@
 Welcome to the openFlightHPC Project Documentation
 ==================================================
 
-This site contains the documentation for the openFlightHPC project. It contains concept descriptions, implementation considerations and guidelines for developing a HPC stack for any workflow. While the documentation will mainly focus on a traditional HPC cluster workflow there will be notes and tips to customising the process for varying workflows.
+This site contains the documentation for the openFlightHPC project. It contains tips and tools for streamlining the building and management of HPC clusters and environments. While the documentation will mainly focus on the OpenFlightHPC cluster workflow there will be notes and tips to customising the process for varying workflows.
 
 Documentation Goal
 ------------------
 
-The purpose of this documentation is to provide a list of considerations and guidelines for the development of a High Performance Computing (HPC) environment. This documentation should be followed through in order to properly understand the structure of the environment and that certain considerations are not missed out along the way.
-
-To generalise the entire process, it goes as follows::
-
-    Cluster Architecture Design -> Platform Deployment/Management -> Environment Delivery
-
-*Cluster Architecture Design* consists of many considerations regarding the platform, configuration and purpose of the cluster. Creating a suitable architecture design will maximise the ease of cluster management and workflow efficiency.
-
-*Platform Deployment/Management* involves the creation of the cluster resources and configuring the base systems of the node in preparation for environment customisation.
+The purpose of this documentation is to provide understandable guidance to delivering the OpenFlightHPC Environment. This includes deploying resources on a given platform and installing the relevant software.
 
 *Environment Delivery* is the installation of software for the user experience on the cluster. This usually involves some sort of resource management/queuing system and application installation.
 
@@ -54,8 +46,8 @@ Table of Contents
 
    cloud/openflighthpc-cloud
    cloud/openflighthpc-cloud-reference
-   cloud/workflow-azure
    cloud/workflow-aws
+   cloud/workflow-azure
    cloud/workflow-flight-cloud
 
 .. toctree::
