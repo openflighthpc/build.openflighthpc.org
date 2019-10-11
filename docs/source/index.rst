@@ -34,30 +34,25 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 1
-   :caption: Helper Tools
-   :name: helper-tools
-
-   helper-tools/flight-runway
-
-.. toctree::
-   :maxdepth: 1
    :caption: Cloud
    :name: cloud
 
-   cloud/openflighthpc-cloud
-   cloud/openflighthpc-cloud-reference
    cloud/workflow-aws
    cloud/workflow-azure
    cloud/workflow-flight-cloud
 
 .. toctree::
    :maxdepth: 1
+   :caption: Cloud
+   :name: cloud
+
+   metal/workflow-manual
+
+.. toctree::
+   :maxdepth: 1
    :caption: Environment
    :name: environment
 
-   environment/openflighthpc-manage
-   environment/openflighthpc-manage-reference
    environment/workflow-ansible
-   environment/workflow-flight-manage
    environment/workflow-manual
 
