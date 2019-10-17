@@ -39,7 +39,6 @@ Table of Contents
 
    cloud/workflow-aws
    cloud/workflow-azure
-   cloud/workflow-flight-cloud
 
 .. toctree::
    :maxdepth: 1
