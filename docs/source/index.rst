@@ -55,3 +55,11 @@ Table of Contents
    environment/workflow-ansible
    environment/workflow-manual
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Power
+   :name: power
+   
+   power/flight-power
+   power/workflow-aws
+
