@@ -22,7 +22,7 @@ Deploy Resources
 
 - Create resource group for gateway1::
 
-    $ az group create --name mycloud-gateway1 --location "UK South"
+    $ az group create --name mycluster-gateway1 --location "UK South"
 
 - Deploy gateway1::
 
@@ -38,7 +38,7 @@ Deploy Resources
 
 - Create resource group for node01::
 
-    $ az group create --name mycloud-node01 --location "UK South"
+    $ az group create --name mycluster-node01 --location "UK South"
 
 - Deploy node01::
 
@@ -52,7 +52,7 @@ Deploy Resources
 
 - Create resource group for node01::
 
-    $ az group create --name mycloud-node01 --location "UK South"
+    $ az group create --name mycluster-node01 --location "UK South"
 
 - Deploy node01::
 
