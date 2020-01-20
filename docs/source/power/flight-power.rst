@@ -83,6 +83,31 @@ Overview
 
 **Github Project:** `<https://github.com/openflighthpc/power-client>`_
 
+The client provides a lightweight, simple command-line tool for issuing power commands to the server.
 
+Configuration
+^^^^^^^^^^^^^
 
+To configure the client, it requires the location of the server and a security token to authenticate commands. 
 
+The client configuration file is stored at ``/opt/flight/opt/power-client/etc/config.yaml`` and consists of two keys::
+
+    base_url: http://localhost:6302
+    jwt_token: generated_authorisation_token
+
+Default configuration of the client sets the base url (the address of the power server) to localhost, preparing the client to initially work with a local server. 
+
+The JWT token will need to be modified to the value given when generating a client token from the server.
+
+Command Line
+^^^^^^^^^^^^
+
+The command line tools provides a generalised syntax to perform common power commands. These commands are:
+
+- List: Provide a list of the available nodes configured on the server
+- Status: Returns the current power status of the specified nodes
+- On: Power on the specified nodes
+- Off: Power off the specified nodes
+- Restart: Restart the power state of the specified nodes
+
+Command examples and further client usage information can be found in the workflow documentation (:ref:`AWS Cluster Workflow <power/workflow-aws:List Available Nodes>`).
