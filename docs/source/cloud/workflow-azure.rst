@@ -50,15 +50,15 @@ Deploy Resources
     networkSecurityGroupID='NETWORK_SECURITY_GROUP_ID_HERE' \
     sourceimage='SOURCE_IMAGE_PATH_HERE'
 
-- Create resource group for node01::
+- Create resource group for node02::
 
-    $ az group create --name mycluster-node01 --location "UK South"
+    $ az group create --name mycluster-node02 --location "UK South"
 
-- Deploy node01::
+- Deploy node02::
 
-    $ az group deployment create --name node01 --resource-group mycluster-node01 \
+    $ az group deployment create --name node02 --resource-group mycluster-node02 \
     --template-file /opt/flight/templates/azure/node.json \
-    --parameters nodename=node01 \
+    --parameters nodename=node02 \
     sshPublicKey="SSH_PUBLIC_KEY_HERE" \
     networkSubnetID='NETWORK_SUBNET_ID_HERE' \
     networkSecurityGroupID='NETWORK_SECURITY_GROUP_ID_HERE' \
