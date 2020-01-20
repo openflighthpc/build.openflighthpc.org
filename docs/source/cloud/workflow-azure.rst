@@ -34,7 +34,7 @@ Deploy Resources
     networkSecurityGroupID='NETWORK_SECURITY_GROUP_ID_HERE' \
     sourceimage='SOURCE_IMAGE_PATH_HERE'
 
-.. note:: While most IDs can be identified through the Azure GUI, the subnet ID is a bit trickier to locate but can be found with the command ``az network vnet subnet list --resource-group mycluster-domain-basic --vnet-name flightcloudclusternetwork``
+.. note:: While most IDs can be identified through the Azure GUI, the subnet ID is a bit trickier to locate but can be found with the command ``az network vnet subnet list --resource-group mycluster-domain --vnet-name flightcloudclusternetwork``
 
 - Create resource group for node01::
 
