@@ -18,7 +18,7 @@ Deploy Resources
     
 - Deploy domain::
 
-    $ az group deployment create --name domain --resource-group mycluster-domain —template-file /opt/flight/templates/azure/domain.json
+    $ az group deployment create --name domain --resource-group mycluster-domain --template-file /opt/flight/templates/azure/domain.json
 
 - Create resource group for gateway1::
 
