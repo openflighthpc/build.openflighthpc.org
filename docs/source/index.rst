@@ -62,4 +62,5 @@ Table of Contents
    
    power/flight-power
    power/workflow-aws
+   power/workflow-azure
 
