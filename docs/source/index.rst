@@ -42,13 +42,6 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 1
-   :caption: Cloud
-   :name: cloud
-
-   metal/workflow-manual
-
-.. toctree::
-   :maxdepth: 1
    :caption: Environment
    :name: environment
 
