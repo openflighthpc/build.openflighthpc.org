@@ -10,7 +10,7 @@ Deploy Resources
 
 - Run the createtemplates script to create AWS and Azure templates::
 
-    $ curl https://raw.githubusercontent.com/openflighthpc/openflighthpc-manage/master/scripts/cloud/createtemplates.sh |/bin/bash
+    $ curl https://raw.githubusercontent.com/openflighthpc/openflighthpc-build/master/scripts/cloud/createtemplates.sh |/bin/bash
 
 - Create resource group for domain::
 
