@@ -8,8 +8,9 @@ Workflow: Ansible
 Configure Environment
 ---------------------
 
-- Install ansible::
+- Install ansible (>v2.8.0)::
 
+    $ yum install -y epel-release
     $ yum install -y ansible
 
 - Create hosts file::
