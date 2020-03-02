@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to the openFlightHPC Manage Knowledgebase!
-==================================================
+Welcome to the OpenFlightHPC Build Knowledgebase!
+=================================================
 
 This site contains the documentation for the OpenFlightHPC project. It contains tips and tools for streamlining the building and management of a HPC research environments. While the documentation will mainly focus on the OpenFlightHPC Research Environment workflow there will be notes and tips to customising the process for varying workflows.
 
