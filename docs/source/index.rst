@@ -6,14 +6,14 @@
 Welcome to the openFlightHPC Manage Knowledgebase!
 ==================================================
 
-This site contains the documentation for the openFlightHPC project. It contains tips and tools for streamlining the building and management of HPC clusters and environments. While the documentation will mainly focus on the OpenFlightHPC cluster workflow there will be notes and tips to customising the process for varying workflows.
+This site contains the documentation for the OpenFlightHPC project. It contains tips and tools for streamlining the building and management of a HPC research environments. While the documentation will mainly focus on the OpenFlightHPC Research Environment workflow there will be notes and tips to customising the process for varying workflows.
 
 Documentation Goal
 ------------------
 
-The purpose of this documentation is to provide understandable guidance to delivering the OpenFlightHPC Environment. This includes deploying resources on a given platform and installing the relevant software.
+The purpose of this documentation is to provide understandable guidance to delivering the OpenFlightHPC Research Environment. This includes deploying resources on a given platform and installing the relevant software.
 
-*Environment Delivery* is the installation of software for the user experience on the cluster. This usually involves some sort of resource management/queuing system and application installation.
+*Environment Delivery* is the installation of software for the user experience on the research environment. This usually involves some sort of resource management/queuing system and application installation.
 
 .. note:: It is recommended to read through all of the documentation before starting to design the HPC platform to understand the scope and considerations.
 
@@ -34,26 +34,43 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 1
-   :caption: Cloud
-   :name: cloud
+   :caption: Deploying Resources
+   :name: deploying-resources
 
    cloud/workflow-aws
    cloud/workflow-azure
 
 .. toctree::
    :maxdepth: 1
-   :caption: Environment
-   :name: environment
+   :caption: Configuring Environment
+   :name: configuring-environment
 
    environment/workflow-ansible
    environment/workflow-manual
 
 .. toctree::
    :maxdepth: 1
-   :caption: Power
-   :name: power
+   :caption: Managing Resources
+   :name: managing-resources
    
    power/flight-power
    power/workflow-aws
    power/workflow-azure
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Using Environment
+   :name: using-environment
+
+   using-environment/basic_research_environment_operation
+   using-environment/data_basics
+   using-environment/genders-and-pdsh
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Running Jobs
+   :name: running-jobs
+
+   running-jobs/local
+   running-jobs/what-is-a-scheduler
+   running-jobs/slurm
