@@ -37,8 +37,8 @@ Table of Contents
    :caption: Deploying Resources
    :name: deploying-resources
 
-   cloud/workflow-aws
-   cloud/workflow-azure
+   deploying-resources/workflow-aws
+   deploying-resources/workflow-azure
 
 .. toctree::
    :maxdepth: 1
