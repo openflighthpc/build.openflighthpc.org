@@ -36,3 +36,4 @@ Configure Environment
     $ cd openflight-ansible-playbook
     $ ansible-playbook openflight.yml
 
+.. note:: The playbook may hang trying to verify the SSH fingerprints of the hosts if none of them have been logged into before from the ansible host. It is recommended to have already established a trusted SSH connection to all systems first.
