@@ -3,7 +3,7 @@
 Workflow: Azure
 ===============
 
-.. include:: /cloud/partials/workflow-prerequisites.rst
+.. include:: /deploying-resources/partials/workflow-prerequisites.rst
 
 Template Parameters
 -------------------
