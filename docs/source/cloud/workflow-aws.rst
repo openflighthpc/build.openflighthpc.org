@@ -20,7 +20,7 @@ There are multiple parameters in the template, some are required and others are 
 Deploy Resources
 ----------------
 
-- Download the OpenFlight AWS template (which creates a private VPC, a gateway node and between 2 and 8 compute nodes)::
+- Download the OpenFlight AWS template::
 
     $ curl -o cluster.yaml https://raw.githubusercontent.com/openflighthpc/openflight-compute-cluster-builder/master/templates/aws/cluster.yaml
 
