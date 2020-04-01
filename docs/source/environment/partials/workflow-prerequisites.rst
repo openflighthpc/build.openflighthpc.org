@@ -17,3 +17,4 @@ This document presumes the following situation:
 - DNS is correctly configured to allow hostname connections between the nodes
 - Firewall connections between the gateway and compute nodes are open to allow various services to communicate (e.g. queuing system, nfs, etc)
 - SSH keys are correctly configured to allow the gateway to login to nodes (as root)
+- There is sufficient storage space on the gateway and compute nodes (for applications and data, recommended 16GB+)

@@ -16,3 +16,6 @@ This document presumes the following situation:
 - There is enough availability in the upstream cloud region of your account to deploy these resources 
 - A suitable CentOS 7 source image is available in the cloud provider for basing nodes off of 
 
+  - This source image should be at least 16GB in size to allow enough space for applications and data
+
+.. note:: OpenFlight provides various images that are ready for cloud, these can be found at `<https://openflighthpc.org/images/>`_
