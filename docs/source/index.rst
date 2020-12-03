@@ -53,7 +53,7 @@ Table of Contents
    :caption: Managing Resources
    :name: managing-resources
    
-   power/flight-action
+   action/flight-action
 
 .. toctree::
    :maxdepth: 1
