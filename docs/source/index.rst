@@ -53,9 +53,7 @@ Table of Contents
    :caption: Managing Resources
    :name: managing-resources
    
-   power/flight-power
-   power/workflow-aws
-   power/workflow-azure
+   power/flight-action
 
 .. toctree::
    :maxdepth: 1
