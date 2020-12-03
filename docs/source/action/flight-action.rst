@@ -97,7 +97,7 @@ To ensure that the action server is running after reboot, enable it::
 
     flight service enable action-api
 
-.. note:: In order for the action server to be queryable, a webserver of some kind is needed. This could be a manual Apache/Nginx setup or by using the OpenFlight WWW service (``flight service start www``). It's also worth noting that only HTTPS is supported by the action server so ensure that it is suitably certified. The OpenFlight WWW service can assist with certificate generation, see ``flight www cert-gen`` for more information.
+.. note:: In order for the action server to be queryable, a webserver of some kind is needed. This could be a manual Apache/Nginx setup or by using the OpenFlight WWW service (``flight service start www``). It's also worth noting that only HTTPS is supported by the OpenFlight WWW service so ensure that it is suitably certified. The OpenFlight WWW service can assist with certificate generation, see ``flight www cert-gen`` for more information.
 
 Helpers
 ^^^^^^^
@@ -114,14 +114,13 @@ The OpenFlight package ``flight-action-api-power`` provides power management com
 - ``power-cycle`` - Cycle the power, reboot the node
 - ``power-status`` - Print the power status of the node
 
-Additionally, a shorter entrypoint for the ``flight`` command is created, such that the ``flight action power-off node01`` can be shortened to ``flight power off node01``. 
-
 Estate
 ~~~~~~
 
 The OpenFlight package ``flight-action-api-estate`` provides estate management commands for multiple platforms (AWS & Azure) for setting the instance size of cloud nodes. The specific commands it provides are:
 
 - ``estate-change`` - Change the machine type of a node
+- ``estate-show`` - Show the machine type of a node
 
 Client
 ------
@@ -146,7 +145,7 @@ Where ``base_url`` is the hostname or IP address of the OpenFlight Action Server
 Command Line
 ^^^^^^^^^^^^
 
-The command line provides a generalised client for accessing whatever command have been created on the server, therefore there are only a couple of consistent subcommands for the client:
+The command line provides a generalised client for accessing whatever commands have been created on the server, therefore there are only a couple of consistent subcommands for the client:
 
 - ``help`` - The help page will show all available commands defined in the action server
 - ``estate-list`` - This command lists all the nodes defined in the action server
