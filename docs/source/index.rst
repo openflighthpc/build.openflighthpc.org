@@ -54,6 +54,7 @@ Table of Contents
    :name: managing-resources
    
    action/flight-action
+   action/workflow-aws
 
 .. toctree::
    :maxdepth: 1
