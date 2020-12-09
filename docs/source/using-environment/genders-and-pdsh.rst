@@ -24,6 +24,8 @@ Where ``X`` is one of:
 - ``embedded`` - Prefer OpenFlight PDSH
 - ``disabled`` - Do not include OpenFlight PDSH in PATH
 
+.. note:: OpenFlight PDSH defaults ``system`` priority, to ensure that the OpenFlight User Environment uses the OpenFlight PDSH, set the priority to ``embedded`` after installation (``flight config set pdsh.priority embedded``)
+
 Finding the names of your compute nodes
 ---------------------------------------
 
