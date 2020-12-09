@@ -14,6 +14,15 @@ Nodeattr and pdsh can be installed using the yum package manager, simply::
 
     sudo yum -y install flight-pdsh
 
+Once installed, the pdsh command will be available to active OpenFlight User Suite sessions (use ``flight start`` to activate the session). The priority of the OpenFlight pdsh command in the path can be configured with::
+
+    flight config set pdsh.priority X
+
+Where ``X`` is one of:
+
+- ``system`` - Prefer system PDSH
+- ``embedded`` - Prefer OpenFlight PDSH
+- ``disabled`` - Do not include OpenFlight PDSH in PATH
 
 Finding the names of your compute nodes
 ---------------------------------------
