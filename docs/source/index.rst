@@ -55,6 +55,7 @@ Table of Contents
    
    action/flight-action
    action/workflow-aws
+   action/workflow-azure
 
 .. toctree::
    :maxdepth: 1
